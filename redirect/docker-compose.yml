@@ -1,0 +1,6 @@
+redirect:
+  image: sebpsdev/redirect
+  ports:
+    - "8080:80"
+  command: ["--sourcePort=80", "--targetPort=5000", "--targetHost=host.docker.internal"]
+  restart: always
